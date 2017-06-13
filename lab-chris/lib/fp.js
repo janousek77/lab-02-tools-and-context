@@ -8,6 +8,4 @@ method.reduce = (list, args) => Array.isArray(list) ? Array.prototype.reduce.app
 
 method.filter = (list, arg) => Array.isArray(list) ? Array.prototype.filter.call(list, arg) : null;
 
-// method.reduce = (list, callback) => Array.isArray(list) ? Array.prototype.reduce.call(list, callback) : null;
-//
 // method.concat = (list, callback) => Array.isArray(list) ? Array.prototype.concat.call(list, callback) : null;

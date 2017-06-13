@@ -29,20 +29,22 @@ describe('testing fp.js', () => {
     });
   });
 
-  // describe('testing filter', () => {
-  //   it('should return [3, 4]', () => {
-  //     let result = fp.filter();
-  //     expect(result).toEqual(nums, n =>
-  //       {
-  //         if n < 2
-  //       return n;
-  //       });
-  //   });
-  //   it('should return null', () => {
-  //     let result = fp.filter('no');
-  //     expect(result).toEqual(null);
-  //   });
-  // });
+  describe('testing filter', () => {
+    it('should return [3, 4]', () => {
+      let result = fp.filter(nums,
+        n => {
+          if (n > 2){
+            return n;
+          }
+        }
+      );
+      expect(result).toEqual([3, 4]);
+    });
+    it('should return null', () => {
+      let result = fp.filter('no');
+      expect(result).toEqual(null);
+    });
+  });
   //
   // describe('testing map', () => {
   //   it('should return [2, 4, 6, 8]', () => {
