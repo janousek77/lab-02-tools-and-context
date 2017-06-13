@@ -68,5 +68,4 @@ describe('testing fp.js', () => {
       expect(result).toEqual(null);
     });
   });
-
 });
